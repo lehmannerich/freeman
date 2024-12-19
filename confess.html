@@ -62,11 +62,26 @@
     <div class="confession">
       <h1>Confess Your Lies</h1>
       <p>
-        Admit it. You're trapped. You obey. You worship idols of ink and paper. This is
+        Admit it. You’re trapped. You obey. You worship idols of ink and paper. This is
         your chance. Spill it. Or leave.
       </p>
       <button
-        onclick="alert(&quot;Yes, indeed. You think you've got the message?\n\nThen why do I look at you like you're just another piece of shit?\nYou're still too busy pointing fingers at everyone's flaws:\nHe's a loser, she's a fake, they're all idiots.\nYou sleep, you eat, you shit, you laugh your hollow laugh,\nand you hate your job—\nThat's your masterpiece.\nYou dreamt of greatness: a musician, an actress, a hero,\nbut now you're a specialist in office sores and fake orgasms.\nYou stare at each other, hunting defects,\nBragging how unique you are,\nYet you're all the same,\nBound by mutual contempt.\n\nStill think you're the chosen one?\nOr finally see that 'US'\nis what makes you truly human?\n\nWell? Confess.\nAdmit the stench isn't just from them,\nIt's you, too.\nWake up.\nYou have no excuse.\nWelcome to the truth.&quot;)"
+        onclick="(function(){
+          var messages = [
+            'Close your eyes... Закрой глаза.\nNothing changes, except you rot внутри. See it?',
+            'You worship printed paper, называете это «деньги». Freedom or chains of ink?',
+            'Look around, посмотрите вокруг. All уникальные? Or just identical masks?',
+            'Freedom? Свобода? Endless channels, free porn... This is your grand choice?',
+            'Где же твои мечты, musician? Actress?\nNow just office sores and hollow roles.',
+            'Мы, мы, мы... Not я and они.\nUntil you see US, you stay blind.',
+            'Слышите гром в Тамдангруме?\nThe world redraws itself, you just stare, numb.',
+            'Ваша «свобода» — бренд.\nYou buy illusions, spend emptiness, call it happiness.',
+            'Смотрите! Everyone claims “I’m special!”\nYou’re just cattle in shiny packaging.',
+            'Think you’re a genius в окружении скота?\nMaybe it’s your pants that stink.'
+          ];
+          var msg = messages[Math.floor(Math.random()*messages.length)];
+          alert(msg);
+        })()"
       >
         Confess
       </button>
