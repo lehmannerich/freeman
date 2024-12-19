@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Confessional</title>
+    <style>
+      body {
+        background: #111;
+        color: #eee;
+        font-family: monospace;
+        margin: 0;
+        padding: 3rem 0 0 0; /* top padding to accommodate nav */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        box-sizing: border-box;
+        flex-direction: column;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #000;
+        text-align: center;
+        padding: 0.5rem 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #0ff;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .confession {
+        text-align: center;
+        max-width: 600px;
+      }
+      .confession button {
+        background: transparent;
+        border: 2px solid #eee;
+        color: #eee;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .confession button:hover {
+        background: #eee;
+        color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mirrors.html">Hall of Mirrors</a>
+      <a href="confess.html">The Confessional</a>
+    </nav>
+
+    <div class="confession">
+      <h1>Confess Your Lies</h1>
+      <p>
+        Admit it. You're trapped. You obey. You worship idols of ink and paper. This is
+        your chance. Spill it. Or leave.
+      </p>
+      <button
+        onclick="alert(&quot;Yes, indeed. You think you've got the message?\n\nThen why do I look at you like you're just another piece of shit?\nYou're still too busy pointing fingers at everyone's flaws:\nHe's a loser, she's a fake, they're all idiots.\nYou sleep, you eat, you shit, you laugh your hollow laugh,\nand you hate your job—\nThat's your masterpiece.\nYou dreamt of greatness: a musician, an actress, a hero,\nbut now you're a specialist in office sores and fake orgasms.\nYou stare at each other, hunting defects,\nBragging how unique you are,\nYet you're all the same,\nBound by mutual contempt.\n\nStill think you're the chosen one?\nOr finally see that 'US'\nis what makes you truly human?\n\nWell? Confess.\nAdmit the stench isn't just from them,\nIt's you, too.\nWake up.\nYou have no excuse.\nWelcome to the truth.&quot;)"
+      >
+        Confess
+      </button>
+    </div>
+  </body>
+</html>

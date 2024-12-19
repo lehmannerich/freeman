@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hall of Mirrors</title>
+    <style>
+      body {
+        background: #000;
+        color: #fff;
+        font-family: monospace;
+        margin: 0;
+        padding: 3rem 0 0 0; /* top padding to accommodate nav */
+        overflow: hidden;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #000;
+        text-align: center;
+        padding: 0.5rem 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #0ff;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .mirror {
+        position: absolute;
+        width: 20vw;
+        height: 40vh;
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        overflow: hidden;
+        transform-origin: center;
+        animation: floaty 5s infinite alternate ease-in-out;
+      }
+      /* Adjusting nth-child indices since nav is now the first child */
+      .mirror:nth-of-type(2) {
+        top: 10%;
+        left: 10%;
+        transform: rotate(5deg);
+      }
+      .mirror:nth-of-type(3) {
+        top: 50%;
+        left: 20%;
+        transform: rotate(-5deg);
+      }
+      .mirror:nth-of-type(4) {
+        top: 20%;
+        left: 50%;
+        transform: rotate(3deg);
+      }
+      .mirror:nth-of-type(5) {
+        top: 60%;
+        left: 60%;
+        transform: rotate(-3deg);
+      }
+      .mirror:nth-of-type(6) {
+        top: 30%;
+        left: 80%;
+        transform: rotate(8deg);
+      }
+
+      @keyframes floaty {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        100% {
+          transform: translateY(-10px) rotate(1deg);
+        }
+      }
+
+      .mirror-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .mirror-content span {
+        writing-mode: vertical-rl;
+        transform: scale(-1, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mirrors.html">Hall of Mirrors</a>
+      <a href="confess.html">The Confessional</a>
+    </nav>
+
+    <div class="mirror">
+      <div class="mirror-content"><span>You are not who you think you are.</span></div>
+    </div>
+    <div class="mirror">
+      <div class="mirror-content">
+        <span>Reflections of lies, printed on your mind.</span>
+      </div>
+    </div>
+    <div class="mirror">
+      <div class="mirror-content"><span>Look closely. See the cracks?</span></div>
+    </div>
+    <div class="mirror">
+      <div class="mirror-content"><span>Step closer. Dare to see beyond?</span></div>
+    </div>
+    <div class="mirror">
+      <div class="mirror-content"><span>No escape. This is you, multiplied.</span></div>
+    </div>
+  </body>
+</html>
